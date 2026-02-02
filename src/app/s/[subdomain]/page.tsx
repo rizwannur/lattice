@@ -37,8 +37,8 @@ export default async function SubdomainPage({
   }
 
   return (
-    <div className="flex min-h-screen flex-col bg-gradient-to-b from-blue-50 to-white p-4">
-      <div className="absolute top-4 right-4">
+    <div className="flex min-h-0 flex-1 flex-col bg-gradient-to-b from-blue-50 to-white sm:p-4">
+      <div className="absolute top-2 right-2 sm:top-4 sm:right-4">
         <Link
           href={`${protocol}://${rootDomain}`}
           className="text-sm text-gray-500 hover:text-gray-700 transition-colors"
@@ -47,13 +47,13 @@ export default async function SubdomainPage({
         </Link>
       </div>
 
-      <div className="flex-1 flex items-center justify-center">
-        <div className="text-center">
-          <div className="text-9xl mb-6">{subdomainData.emoji}</div>
-          <h1 className="text-4xl font-bold tracking-tight text-gray-900">
+      <div className="flex min-h-0 flex-1 flex items-center justify-center p-4">
+        <div className="text-center max-w-lg">
+          <div className="text-6xl sm:text-8xl lg:text-9xl mb-4 sm:mb-6">{subdomainData.emoji}</div>
+          <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl lg:text-4xl">
             {subdomainData.title}
           </h1>
-          <p className="mt-3 text-lg text-gray-600">
+          <p className="mt-2 text-base text-gray-600 sm:mt-3 sm:text-lg">
             {subdomainData.description}
           </p>
         </div>

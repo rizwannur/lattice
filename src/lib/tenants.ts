@@ -48,7 +48,7 @@ export async function getTenantData(subdomain: string): Promise<TenantData | nul
     return {
       emoji: '⚡',
       title: 'Admin Dashboard',
-      description: 'Platform administration and management controls.',
+      description: 'Lattice platform administration and tenant management.',
       createdAt: Date.now()
     };
   }

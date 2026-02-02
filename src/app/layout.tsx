@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import { Geist } from 'next/font/google';
-import { SpeedInsights } from '@vercel/speed-insights/next';
 import './globals.css';
 
 const geistSans = Geist({
@@ -9,8 +8,9 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: 'Platforms Starter Kit',
-  description: 'Next.js template for building a multi-tenant SaaS.'
+  title: 'Lattice',
+  description: 'A multi-tenant application connecting small businesses to bigger ones.',
+  keywords: ['Lattice', 'multi-tenant', 'small business', 'enterprise', 'B2B', 'partnerships'],
 };
 
 export default function RootLayout({
@@ -22,7 +22,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} antialiased`}>
         {children}
-        <SpeedInsights />
       </body>
     </html>
   );
